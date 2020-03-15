@@ -1,0 +1,12 @@
+/*
+	Fonts under OFL License
+*/
+
+@font-face {
+	font-family: AnonymousPro;
+	src: url("../../assets/fonts/AnonymousPro.ttf");
+}
+
+body {
+  font-family: AnonymousPro;
+}
