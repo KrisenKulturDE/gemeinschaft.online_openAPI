@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Form from "../Form/Form";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -11,6 +11,6 @@ function App() {
       <Form />
     </div>
   );
-}
+};
 
 export default App;
