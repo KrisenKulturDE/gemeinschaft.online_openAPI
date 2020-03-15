@@ -15,7 +15,7 @@ const Form = () => {
 
     if (request) {
       axios
-        .post("http://localhost:5000/api/requests", request)
+        .post("/api/requests", request)
         .then(res => {
           if (res.data) {
             // TODO Add success message which is more visible to the user
