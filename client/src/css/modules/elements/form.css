@@ -64,7 +64,7 @@ input {
 	background-color: var(--color-base-elements-background);
 	color: var(--color-base-elements-foreground);
 	border-bottom: 1px solid var(--color-base-elements-foreground);
-	width: 100%;
+	width: 90%;
 }
 
 input:focus {
