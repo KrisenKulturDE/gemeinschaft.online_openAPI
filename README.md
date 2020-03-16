@@ -17,3 +17,5 @@ Do not forget that the server needs a .env file to work. An example .env.example
 The client can be build by doing `cd client` to get into the client folder and then `npm run build`.
 
 The server can just be deployed with `cd server` and `npm run start`.
+
+Other files, which are not in the client or server folder are just used for local testing!
