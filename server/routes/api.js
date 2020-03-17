@@ -8,7 +8,8 @@ router.post("/requests", checkAuth, (req, res, next) => {
     Request.create({
       phone: req.body.phone,
       zip: req.body.zip,
-      request: req.body.request ? req.body.request : -1
+      request:
+        req.body.request || req.body.request === 0 ? req.body.request : -1
     })
       .then(data => res.json(data))
       .catch(err => next(err));
