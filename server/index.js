@@ -10,7 +10,11 @@ const port = process.env.PORT || 5000;
 
 //connect to the database
 mongoose
-  .connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(process.env.DB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    dbName: "coronadb"
+  })
   .then(() => console.log(`Database connected successfully`))
   .catch(err => console.log(err));
 
