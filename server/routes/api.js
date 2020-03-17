@@ -3,8 +3,12 @@ const router = express.Router();
 const Request = require("../models/request");
 
 router.post("/requests", (req, res, next) => {
-  if (req.body) {
-    Request.create(req.body)
+  if (req.body.phone && req.body.zip && req.body.request) {
+    Request.create({
+      phone: req.body.phone,
+      zip: req.body.zip,
+      request: req.body.request
+    })
       .then(data => res.json(data))
       .catch(next);
   } else {

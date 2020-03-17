@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const routes = require("./routes/api");
 require("dotenv").config();
+const checkAuth = require("./middlewares/check-auth");
 
 const app = express();
 
@@ -27,6 +28,8 @@ app.use((req, res, next) => {
 });
 
 app.use(bodyParser.json());
+
+app.use(checkAuth);
 
 app.use("/api", routes);
 
