@@ -1,23 +1,30 @@
 {
-  "name": "callcenterfrontend",
+  "name": "gemeinschaft.online_openapi",
   "version": "1.0.0",
-  "description": "The frontend (and backend) of the hotline database client for gemeinschaft.online",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
   "scripts": {
-    "setup": "npm install && cd server  && npm install && cd .. && cd client && npm install",
-    "dev": "concurrently \"cd server && npm run start-watch\" \"cd client && npm run start\""
+    "start": "node index.js",
+    "start-watch": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NoobTenLuka/CallcenterFrontend.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NoobTenLuka/CallcenterFrontend/issues"
   },
-  "homepage": "https://github.com/NoobTenLuka/CallcenterFrontend#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "concurrently": "^5.1.0"
-  }
+  "homepage": "https://github.com/NoobTenLuka/CallcenterFrontend#readme"
 }
