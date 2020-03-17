@@ -18,13 +18,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NoobTenLuka/CallcenterFrontend.git"
+    "url": "git+https://github.com/KrisenKulturDE/gemeinschaft.online_openAPI.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NoobTenLuka/CallcenterFrontend/issues"
+    "url": "https://github.com/KrisenKulturDE/gemeinschaft.online_openAPI/issues"
   },
-  "homepage": "https://github.com/NoobTenLuka/CallcenterFrontend#readme"
+  "homepage": "https://github.com/KrisenKulturDE/gemeinschaft.online_openAPI/#readme"
 }
