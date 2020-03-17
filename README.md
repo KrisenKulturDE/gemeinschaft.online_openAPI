@@ -12,6 +12,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 Do not forget that the server needs a .env file to work. An example .env.example is provided in the server files.
 
+Also the client needs a jwt which is the empty token parameter in src/components/Form/Form.js on line 11
+
 ## Deployment
 
 The client can be build by doing `cd client` to get into the client folder and then `npm run build`.
