@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-//create schema for todo
 const RequestSchema = new Schema({
   phone: {
     type: String,
@@ -11,20 +10,19 @@ const RequestSchema = new Schema({
     type: String,
     required: true
   },
+  request: {
+    type: Number,
+    required: true,
+    min: 1,
+    max: 4
+  },
   timestamp: {
     type: Date,
     default: Date.now()
-  },
-  requestText: {
-    type: String,
-    required: true
-  },
-  soundFile: {
-    type: String
   }
 });
 
-//create model for todo
+// Create model for request
 const Request = mongoose.model("request", RequestSchema);
 
 module.exports = Request;
