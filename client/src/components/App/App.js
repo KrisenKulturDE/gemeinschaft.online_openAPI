@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Form from "../Form/Form";
+import View from "../View/View";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
         <h1>Input Data</h1>
       </header>
       <Form />
+      <View />
     </div>
   );
 };
