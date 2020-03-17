@@ -4,17 +4,17 @@ const Request = require("../models/request");
 const checkAuth = require("../middlewares/check-auth");
 
 router.post("/requests", checkAuth, (req, res, next) => {
-  if (req.body.phone && req.body.zip && req.body.request) {
+  if (req.body.phone && req.body.zip) {
     Request.create({
       phone: req.body.phone,
       zip: req.body.zip,
-      request: req.body.request
+      request: req.body.request ? req.body.request : -1
     })
       .then(data => res.json(data))
       .catch(err => next(err));
   } else {
     res.json({
-      error: "One or more input fields are empty"
+      error: "One or more inputs are empty"
     });
   }
 });

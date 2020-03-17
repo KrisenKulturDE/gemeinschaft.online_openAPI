@@ -13,8 +13,8 @@ const RequestSchema = new Schema({
   request: {
     type: Number,
     required: true,
-    min: 1,
-    max: 4
+    min: -1,
+    max: 9
   },
   timestamp: {
     type: Date,
