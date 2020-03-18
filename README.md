@@ -1,6 +1,6 @@
-# Callcenter Client
+# Open API for the gemeinschaft.online database
 
-This is the client that can write the necessary things to the database
+This is the server that can write the necessary things to the database
 
 ## Getting Started
 
