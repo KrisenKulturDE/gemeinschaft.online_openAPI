@@ -10,18 +10,8 @@ const checkPhone = (req: Request, res: Response, next: NextFunction) => {
 
     if (firstTwo === "00" && firstFour !== "0049") {
       return next(new HttpException(400, "Not a german number!"));
-    } else if (firstFour === "0049") {
-      firstFour = "0" + phoneNumber.substring(4, 7);
     }
-
-    switch (firstFour) {
-      case "0137":
-      case "0700":
-      case "0900":
-        next(new HttpException(400, "Number not allowed"));
-      default:
-        next();
-    }
+    next();
   } else {
     next(new HttpException(400, "No phone number provided"));
   }
