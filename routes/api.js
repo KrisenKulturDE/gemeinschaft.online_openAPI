@@ -8,6 +8,7 @@ router.post("/requests", checkAuth, (req, res, next) => {
     Request.create({
       phone: req.body.phone,
       zip: req.body.zip,
+      timestamp: Date.now(),
       request:
         req.body.request || req.body.request === 0 ? req.body.request : -1
     })
