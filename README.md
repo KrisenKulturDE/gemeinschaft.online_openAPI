@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 To install all dependencys use `npm install`
 
-Then to start use `npm run start-watch` to start the server im dev mode.
+Then to start use `npm run dev` to start the server in dev mode.
 
 Do not forget that the server needs a .env file to work. An example .env.example is provided.
 
