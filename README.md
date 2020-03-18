@@ -14,4 +14,4 @@ Do not forget that the server needs a .env file to work. An example .env.example
 
 ## Deployment
 
-The server can just be deployed with `npm run start`.
+The server can just be deployed with `npm run build` and then `npm run start`.
